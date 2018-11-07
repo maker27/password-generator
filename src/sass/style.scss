@@ -1,0 +1,27 @@
+@import "~bootstrap/scss/bootstrap.scss";
+
+h2{
+  font: 400 1rem serif;
+}
+#passwordStrength{
+    height: 2rem;
+    line-height: 2rem;
+    text-align: center;
+
+    &.alert-warning:before{
+        content: 'Пароль слишком слабый. Рекомендуется выбирать более длинные пароли.';
+    }
+    &.alert-info:before{
+        content: 'Пароль надежный.';
+    }
+}
+.row{
+    margin: 2rem auto;
+    max-width: 50rem;
+}
+#resultText{
+    padding: 0.5rem;
+}
+#generatedPassword{
+    font: 700 2rem Helvetica, Arial, sans-serif;
+}
